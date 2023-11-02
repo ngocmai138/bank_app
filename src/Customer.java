@@ -70,10 +70,10 @@ public class Customer extends User implements Serializable {
     }
 
     public void displayInformation() {
-        System.out.printf("%-13s| %-25s | %-7s |%,20.0fđ %n", this.getCustomerId(), this.getName(), (this.isCustomerPremium() ? "Premium" : "Normal"), this.getTotalAccountBalance());
+        System.out.printf("%-13s| %-25s | %-8s |%,20.0fđ %n", this.getCustomerId(), this.getName(), (this.isCustomerPremium() ? "Premium" : "Normal"), this.getTotalAccountBalance());
         for (int i = 0; i < accounts.size(); i++) {
             Account account = accounts.get(i);
-            System.out.printf("%-6d%-7s|%-26S |%,30.0fđ %n", (i + 1), account.getAccountNumber(), account.getAccountType(), account.getBalance());
+            System.out.printf("\t%-2d%-7s|%-26S |%,31.0fđ %n", (i + 1), account.getAccountNumber(), account.getAccountType(), account.getBalance());
         }
     }
 

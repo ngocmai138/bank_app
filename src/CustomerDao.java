@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CustomerDao {
-    private final static String FILE_PATH = "vn.funix.fx19868.java\\asm04\\store\\customers.dat";
+    private final static String FILE_PATH = "store\\customers.dat";
 
     public static void save(List<Customer> customers){
         BinaryFileService.writeFile(FILE_PATH, customers);

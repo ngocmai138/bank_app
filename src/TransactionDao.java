@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class TransactionDao {
-    private final static String FILE_PATH = "vn.funix.fx19868.java\\asm04\\store\\transactions.dat";
+    private final static String FILE_PATH = "store\\transactions.dat";
     public static void save(List<Transaction> transactions){
         BinaryFileService.writeFile(FILE_PATH, transactions);
     }

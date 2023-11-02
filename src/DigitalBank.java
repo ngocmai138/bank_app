@@ -78,6 +78,7 @@ public class DigitalBank extends Bank {
     }
 
     public void showCustomer(){
+        System.out.printf("%-13s| %-25s | %-7s |%20s %n", "Mã khách hàng", "Tên khách hàng", "Hạng mức", "Số dư");
         CustomerDao.list().forEach(customer -> customer.displayInformation());
     }
 

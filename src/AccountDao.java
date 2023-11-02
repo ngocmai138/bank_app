@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class AccountDao {
     public static Scanner scanner = new Scanner(System.in);
-    private final static String FILE_PATH = "vn.funix.fx19868.java\\asm04\\store\\accounts.dat";
+    private final static String FILE_PATH = "store\\accounts.dat";
 
     public static void save(List<Account> accounts) {
         BinaryFileService.writeFile(FILE_PATH, accounts);
